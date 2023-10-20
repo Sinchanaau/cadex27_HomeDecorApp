@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FEFBE9"
+    tools:context=".activity_order">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="335dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#F0A04B"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Save Address"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="left"
+        android:text="CONTACT DETAILS"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/rubik_medium"
+        android:hint="Name*"
+        android:inputType="text"
+        android:text=""
+        android:textColorHint="@color/lighter_gray"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/rubik_medium"
+        android:hint="Mobile No*"
+        android:inputType="text"
+        android:text=""
+        android:textColorHint="@color/lighter_gray"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="left"
+        android:text="ADDRESS"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/rubik_medium"
+        android:hint="Pin Code*"
+        android:inputType="text"
+        android:text=""
+        android:textColorHint="@color/lighter_gray"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/rubik_medium"
+        android:hint="Address(House No,Building)*"
+        android:inputType="text"
+        android:text=""
+        android:textColorHint="@color/lighter_gray"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/rubik_medium"
+        android:hint="Locality/Town*"
+        android:inputType="text"
+        android:text=""
+        android:textColorHint="@color/lighter_gray"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514" />
+
+    <EditText
+        android:id="@+id/editTextText7"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/rubik_medium"
+        android:hint="City/District*"
+        android:inputType="text"
+        android:text=""
+        android:textColorHint="@color/lighter_gray"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <EditText
+        android:id="@+id/editTextText8"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:fontFamily="@font/rubik_medium"
+        android:hint="State*"
+        android:inputType="text"
+        android:text=""
+        android:textColorHint="@color/lighter_gray"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

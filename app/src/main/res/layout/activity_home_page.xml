@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_page"
+    android:background="#FEFBE9">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productrecyclerview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="3dp"
+        android:onClick="change"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:itemCount="1"
+        tools:listitem="@layout/activity_category_item" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="3dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productrecyclerview"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlCompat"
+        tools:itemCount="1"
+        tools:listitem="@layout/activity_category2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Explore"
+        android:textSize="15dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/productrecyclerview"
+        app:layout_constraintEnd_toEndOf="@+id/productrecyclerview"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="@+id/productrecyclerview"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.518"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Best Selling"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/productrecyclerview"
+        app:layout_constraintVertical_bias="0.491"
+        tools:ignore="RtlCompat" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@drawable/curved_navigation"
+        android:backgroundTint="#183A1D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/homeicon" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/home"
+            app:layout_constraintStart_toEndOf="@+id/home"
+            app:layout_constraintTop_toTopOf="@+id/home"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/caticon" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/carticon" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/user"
+            android:layout_marginRight="25dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/curved_background"
+        android:backgroundTint="#E1EEDD"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/home3"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:fontFamily="@font/aldrich"
+            android:text="Hello, Sinchana!"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView7"
+            app:layout_constraintVertical_bias="0.109" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

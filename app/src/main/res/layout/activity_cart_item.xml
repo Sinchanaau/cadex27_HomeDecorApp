@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="150dp"
+    android:layout_marginEnd="5dp"
+    android:background="@drawable/curved_recycler"
+    android:backgroundTint="#FEFBE9"
+    android:padding="15dp"
+    tools:context=".activity_cart_item"
+    android:layout_marginRight="5dp">
+
+    <ImageView
+        android:id="@+id/furniture1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/f1"/>
+
+    <TextView
+        android:id="@+id/furniture_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Modern Sofa"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/furniture1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/furniture_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="$57.00"
+        android:textColor="#7AA874"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/furniture_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/furniture_name"
+        app:layout_constraintTop_toBottomOf="@+id/furniture_name" />
+
+    <ImageButton
+        android:id="@+id/imageView12"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        android:backgroundTint="#FEFBE9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875"
+        app:srcCompat="@drawable/controlminus" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:text="1"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik_bold"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:background="#F0A04B"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/textView16"
+        app:srcCompat="@drawable/controlplus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

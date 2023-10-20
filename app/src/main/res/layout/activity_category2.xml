@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="190dp"
+    android:layout_marginEnd="5dp"
+    android:backgroundTint="#FFF"
+    android:padding="15dp"
+    android:background="@drawable/curved_recycler"
+    tools:ignore="RtlCompat">
+
+    <ImageView
+        android:id="@+id/furniture1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/f1" />
+    <TextView
+        android:id="@+id/furniture_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Modern Sofa"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/furniture_price"
+        app:layout_constraintStart_toStartOf="@+id/furniture1"
+        app:layout_constraintTop_toBottomOf="@+id/furniture1" />
+
+    <TextView
+        android:id="@+id/furniture_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$89.00"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="#7AA874"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/furniture1"
+        app:layout_constraintTop_toTopOf="@+id/furniture_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
